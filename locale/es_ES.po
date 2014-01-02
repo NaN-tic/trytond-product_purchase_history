@@ -1,0 +1,19 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:purchase.line,purchase_date:"
+msgid "Purchase Date"
+msgstr "Fecha de compra"
+
+msgctxt "field:purchase.line,purchase_state:"
+msgid "Purchase State"
+msgstr "Estado compra"
+
+msgctxt "model:ir.action,name:act_purchase_line_form"
+msgid "Purchase History"
+msgstr "Historial de ocmpras"
+
+msgctxt "view:purchase.line:"
+msgid "Purchase Lines"
+msgstr "Líneas de compra"
