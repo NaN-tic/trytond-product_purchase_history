@@ -16,6 +16,7 @@ class PurchaseLine:
                 ('draft', 'Draft'),
                 ('quotation', 'Quotation'),
                 ('confirmed', 'Confirmed'),
+                ('processing', 'Processing'),
                 ('done', 'Done'),
                 ('cancel', 'Canceled'),
                 ], 'State'),
