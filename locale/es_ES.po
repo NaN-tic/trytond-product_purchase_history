@@ -12,7 +12,7 @@ msgstr "Estado compra"
 
 msgctxt "model:ir.action,name:act_purchase_line_form"
 msgid "Purchase History"
-msgstr "Historial de ocmpras"
+msgstr "Historial de compras"
 
 msgctxt "view:purchase.line:"
 msgid "Purchase Lines"
