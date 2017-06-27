@@ -1,3 +1,6 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
 <tryton>
     <data>
         <record model="ir.ui.view" id="purchase_line_view_tree">
@@ -8,7 +11,9 @@
         <record model="ir.action.act_window" id="act_purchase_line_form">
             <field name="name">Purchase History</field>
             <field name="res_model">purchase.line</field>
-            <field name="domain">[("product", "=", Eval('active_id'))]</field>
+            <field name="domain"
+                eval="[('product', '=', Eval('active_id'))]"
+                pyson="1"/>
         </record>
         <record model="ir.action.act_window.view"
                 id="act_purchase_line_form_view1">
