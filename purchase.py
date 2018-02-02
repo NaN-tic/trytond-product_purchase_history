@@ -4,12 +4,11 @@ from trytond.model import fields
 from trytond.pool import PoolMeta
 
 __all__ = ['PurchaseLine']
-__metaclass__ = PoolMeta
 
 
 class PurchaseLine:
+    __metaclass__ = PoolMeta
     __name__ = 'purchase.line'
-
     purchase_date = fields.Function(fields.Date('Purchase Date'),
         'get_purchase_field', searcher='search_purchase_field')
     purchase_state = fields.Function(fields.Selection([
