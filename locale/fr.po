@@ -1,0 +1,30 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
+
+msgctxt "field:purchase.line,purchase_date:"
+msgid "Purchase Date"
+msgstr "Date d'achat"
+
+msgctxt "field:purchase.line,purchase_state:"
+msgid "Purchase State"
+msgstr "État de l'achat"
+
+msgctxt "model:ir.action,name:act_purchase_line_form"
+msgid "Purchase History"
+msgstr "Historique d'achat"
+
+msgctxt "view:purchase.line:"
+msgid "Purchase Lines"
+msgstr "Lignes d'achat"
