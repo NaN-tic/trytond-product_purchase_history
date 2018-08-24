@@ -6,8 +6,7 @@ from trytond.pool import Pool, PoolMeta
 __all__ = ['PurchaseLine']
 
 
-class PurchaseLine:
-    __metaclass__ = PoolMeta
+class PurchaseLine(metaclass=PoolMeta):
     __name__ = 'purchase.line'
     number = fields.Function(fields.Char('Number'),
         'get_purchase_field', searcher='search_purchase_field')
