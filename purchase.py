@@ -2,6 +2,7 @@
 # copyright notices and license terms.
 from trytond.model import fields, ModelSQL
 from trytond.pool import Pool, PoolMeta
+from trytond.pyson import Eval
 
 __all__ = ['PurchaseLine']
 
@@ -12,7 +13,10 @@ class PurchaseLine(metaclass=PoolMeta):
         'get_purchase_field', searcher='search_purchase_field')
     purchase_date = fields.Function(fields.Date('Purchase Date'),
         'get_purchase_field', searcher='search_purchase_field')
-    party = fields.Function(fields.Many2One('party.party', 'Party'),
+    party = fields.Function(fields.Many2One('party.party', 'Party',
+            context={
+                'company': Eval('company'),
+            },depends=['company']),
         'get_purchase_field', searcher='search_purchase_field')
     currency = fields.Function(fields.Many2One('currency.currency',
         'Currency'), 'get_purchase_field', searcher='search_purchase_field')
