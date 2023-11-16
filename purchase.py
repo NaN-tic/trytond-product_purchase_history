@@ -15,7 +15,7 @@ class PurchaseLine(metaclass=PoolMeta):
         'get_purchase_field', searcher='search_purchase_field')
     party = fields.Function(fields.Many2One('party.party', 'Party',
             context={
-                'company': Eval('company'),
+                'company': Eval('company', -1),
             },depends=['company']),
         'get_purchase_field', searcher='search_purchase_field')
     currency = fields.Function(fields.Many2One('currency.currency',
